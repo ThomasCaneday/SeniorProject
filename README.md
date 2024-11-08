@@ -9,3 +9,5 @@ TODO: Add ability to transmit CSV files
 TODO: Increase distance between Raspberry Pis
 
 TODO: Test Network Connectivity/Latency
+
+TODO: Test Data Transmission Data Rate/Error Rate
