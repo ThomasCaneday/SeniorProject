@@ -6,6 +6,8 @@ TODO: Add file for continuously recording 1 minute sound file that overwrites it
 
 TODO: Add ability to transmit CSV files
 
+TODO: Test CSV data transmission with new sample data
+
 TODO: Increase distance between Raspberry Pis
 
 TODO: Test Network Connectivity/Latency
