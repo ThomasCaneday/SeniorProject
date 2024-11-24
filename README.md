@@ -4,6 +4,8 @@ This repository will be the storing place for my data transmission and packaging
 
 TODO: Add file for continuously recording 1 minute sound file that overwrites itself after sending to server
 
+TODO: Test external air microphone and hydrophone
+
 TODO: Add ability to transmit CSV files
 
 TODO: Test CSV data transmission with new sample data
