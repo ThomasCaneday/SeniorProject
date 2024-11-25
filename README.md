@@ -6,6 +6,8 @@ TODO: Add file for continuously recording 1 minute sound file that overwrites it
 
 TODO: Test external air microphone and hydrophone
 
+TODO: Test internal and external antenna
+
 TODO: Add ability to transmit CSV files
 
 TODO: Test CSV data transmission with new sample data
