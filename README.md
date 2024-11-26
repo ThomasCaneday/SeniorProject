@@ -8,6 +8,8 @@ TODO: Test external air microphone and hydrophone
 
 TODO: Test internal and external antenna
 
+TODO: Add file for packaging audio as CSV
+
 TODO: Add ability to transmit CSV files
 
 TODO: Test CSV data transmission with new sample data
