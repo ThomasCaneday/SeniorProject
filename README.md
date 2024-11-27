@@ -16,6 +16,8 @@ TODO: Test CSV data transmission with new sample data
 
 TODO: Increase distance between Raspberry Pis
 
+TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m on land)
+
 TODO: Test Network Connectivity/Latency
 
 TODO: Test Data Transmission Data Rate/Error Rate
