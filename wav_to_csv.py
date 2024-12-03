@@ -3,7 +3,7 @@ import csv
 import struct
 import sys
 
-def wav_to_csv(wav_file_path, csv_file_path):
+def wav_to_csv(wav_file_path, csv_file_path='data.csv'):
     try:
         # Open the WAV file
         with wave.open(wav_file_path, 'rb') as wav_file:
