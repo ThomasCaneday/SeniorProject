@@ -4,6 +4,8 @@ This repository will be the storing place for my data transmission and packaging
 
 TODO: Add files used for configuring Ad Hoc network
 
+Added: File for recording audio
+
 TODO: Add file for recording audio upon startup
 
 TODO: Add file for continuously recording 1 minute sound file that overwrites itself after sending to server
