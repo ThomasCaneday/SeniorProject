@@ -18,6 +18,8 @@ Added: File for packaging audio as CSV
 
 TODO: Add ability to transmit CSV files
 
+Added: File for sending CSV file through WebSockets server connection
+
 TODO: Test CSV data transmission with new sample data
 
 TODO: Increase distance between Raspberry Pis
