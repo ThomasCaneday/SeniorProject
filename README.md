@@ -12,7 +12,7 @@ TODO: Add file for continuously recording 1 minute sound file that overwrites it
 
 TODO: Test external air microphone and hydrophone
 
-TODO: Test internal and external antenna
+Fix: Tested internal and partially external antenna (no significant difference)
 
 Added: File for packaging audio as CSV
 
