@@ -4,6 +4,8 @@ This repository will be the storing place for my data transmission and packaging
 
 TODO: Add files used for configuring Ad Hoc network
 
+Fix: Configured network files on Raspberry Pi
+
 Added: File for recording audio
 
 TODO: Add file for recording audio upon startup
