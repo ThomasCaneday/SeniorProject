@@ -10,6 +10,8 @@ TODO: Add file for recording audio upon startup
 
 TODO: Add file for continuously recording 1 minute sound file that overwrites itself after sending to server
 
+Added: File for continuously recording minute sound files
+
 TODO: Test external air microphone and hydrophone
 
 Fix: Tested internal and partially external antenna (no significant difference)
