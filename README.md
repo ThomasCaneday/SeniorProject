@@ -38,4 +38,6 @@ TODO: Test delta between RP-RP and RP-PC connection and transmission
 
 TODO: Add file for classifying air vehicle
 
+TODO: Add file for determining direction of vehicle target
+
 TODO: Add file for emitting underwater ping for alert communication
