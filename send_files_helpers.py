@@ -7,3 +7,9 @@ def get_file_size(file_name):
 def get_metadata(file_name, file_size):
     metadata = f"{file_name},{file_size},{time.time()}"
     return metadata
+
+def get_metadata_bytes(file_name):
+    file_size = get_file_size(file_name)
+    metadata = get_metadata(file_name, file_size)
+    metadata_bytes = metadata.encode()
+    return metadata_bytes
