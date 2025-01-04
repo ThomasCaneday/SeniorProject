@@ -17,3 +17,9 @@ def get_metadata_bytes(file_name):
 def send_metadata_and_length(client_socket, metadata_bytes):
     client_socket.sendall(struct.pack(">I", len(metadata_bytes))) # 4-byte length prefix
     client_socket.sendall(metadata_bytes)
+
+def send_file_chunks(client_socket, file_name):
+    with open(file_name, 'rb') as f:
+        while chunk := f.read(1024):
+                        # data = f.read()
+            client_socket.sendall(chunk)
