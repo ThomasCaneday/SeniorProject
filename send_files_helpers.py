@@ -23,3 +23,11 @@ def send_file_chunks(client_socket, file_name):
         while chunk := f.read(1024):
                         # data = f.read()
             client_socket.sendall(chunk)
+
+def increment_error_count(file_name, error_counts):
+    # Increment the error count for a given file and log the error.
+    if file_name in error_counts:
+        error_counts[file_name] += 1
+    else:
+        error_counts[file_name] = 1
+    print(f"Error count for {file_name}: {error_counts[file_name]}")
