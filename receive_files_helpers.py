@@ -10,3 +10,9 @@ def connect_socket(HOST, PORT, s):
 
 def create_dir(dir):
     os.makedirs(dir, exist_ok=True)
+
+def get_metadata_length(metadata_length_bytes):
+    if not metadata_length_bytes:
+        raise ValueError("Failed to receive metadata length.")
+    metadata_length = struct.unpack(">I", metadata_length_bytes)[0]
+    return metadata_length
