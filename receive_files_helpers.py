@@ -7,3 +7,6 @@ def get_socket():
 
 def connect_socket(HOST, PORT, s):
     s.connect((HOST, PORT))
+
+def create_dir(dir):
+    os.makedirs(dir, exist_ok=True)
