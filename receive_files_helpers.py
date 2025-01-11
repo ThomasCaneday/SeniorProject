@@ -16,3 +16,7 @@ def get_metadata_length(metadata_length_bytes):
         raise ValueError("Failed to receive metadata length.")
     metadata_length = struct.unpack(">I", metadata_length_bytes)[0]
     return metadata_length
+
+def get_metadata_length_bytes(s):
+    metadata_length_bytes = s.recv(4)
+    return metadata_length_bytes
