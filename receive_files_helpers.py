@@ -20,3 +20,7 @@ def get_metadata_length(metadata_length_bytes):
 def get_metadata_length_bytes(s):
     metadata_length_bytes = s.recv(4)
     return metadata_length_bytes
+
+def get_metadata_bytes(s, metadata_length):
+    metadata_bytes = s.recv(metadata_length)
+    return metadata_bytes
