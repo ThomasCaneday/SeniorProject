@@ -24,3 +24,9 @@ def get_metadata_length_bytes(s):
 def get_metadata_bytes(s, metadata_length):
     metadata_bytes = s.recv(metadata_length)
     return metadata_bytes
+
+def get_metadata(metadata_bytes):
+    if not metadata_bytes:
+        raise ValueError("Failed to receive metadata.")
+    metadata = metadata_bytes.decode()
+    return metadata
