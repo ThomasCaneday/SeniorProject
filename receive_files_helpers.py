@@ -30,3 +30,7 @@ def get_metadata(metadata_bytes):
         raise ValueError("Failed to receive metadata.")
     metadata = metadata_bytes.decode()
     return metadata
+
+def get_fname_fsize_sent_time(metadata):
+    file_name, file_size, sent_time = metadata.split(",")
+    return file_name,file_size,sent_time
