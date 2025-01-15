@@ -34,3 +34,7 @@ def get_metadata(metadata_bytes):
 def get_fname_fsize_sent_time(metadata):
     file_name, file_size, sent_time = metadata.split(",")
     return file_name,file_size,sent_time
+
+def get_chunk(s, file_size, received_data):
+    chunk = s.recv(min(1024, file_size - len(received_data)))
+    return chunk
