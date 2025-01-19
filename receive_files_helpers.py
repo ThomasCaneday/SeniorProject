@@ -38,3 +38,12 @@ def get_fname_fsize_sent_time(metadata):
 def get_chunk(s, file_size, received_data):
     chunk = s.recv(min(1024, file_size - len(received_data)))
     return chunk
+
+def update_received_data(s, file_size, received_data):
+    while len(received_data) < file_size:
+        chunk = get_chunk(s, file_size, received_data)
+        if not chunk:
+            # error_count += 1
+            raise ValueError("Incomplete file data received.")
+        received_data += chunk
+    return received_data
