@@ -47,3 +47,8 @@ def update_received_data(s, file_size, received_data):
             raise ValueError("Incomplete file data received.")
         received_data += chunk
     return received_data
+
+def write_file(dir, file_name, received_data):
+    file_path = get_file_path(dir, file_name)
+    with open(file_path, 'wb') as f:
+        f.write(received_data)
