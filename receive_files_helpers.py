@@ -52,3 +52,7 @@ def write_file(dir, file_name, received_data):
     file_path = get_file_path(dir, file_name)
     with open(file_path, 'wb') as f:
         f.write(received_data)
+
+def get_file_path(SAVE_DIR, file_name):
+    file_path = os.path.join(SAVE_DIR, file_name)
+    return file_path
