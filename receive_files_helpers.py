@@ -60,3 +60,7 @@ def get_file_path(SAVE_DIR, file_name):
 def get_time():
     t = time.time()
     return t
+
+def calculate_latency(received, sent):
+    l = received - sent
+    return l
