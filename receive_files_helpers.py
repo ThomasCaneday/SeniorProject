@@ -64,3 +64,23 @@ def get_time():
 def calculate_latency(received, sent):
     l = received - sent
     return l
+
+def log_data_rate(file_name, total_data_received, start_time, end_time, DATA_RATE_LOG_FILE, data_rates):
+    # Calculate and log the data rate to a CSV file.
+    try:
+        elapsed_time = end_time - start_time
+        data_rate = total_data_received / elapsed_time if elapsed_time > 0 else 0
+        data_rates.append(data_rate)
+        
+        with open(DATA_RATE_LOG_FILE, mode="a", newline="") as csv_file:
+            writer = csv.writer(csv_file)
+            # Write header if file is empty
+            if csv_file.tell() == 0:
+                writer.writerow(["Timestamp", "File Name", "Data Rate (bytes/second)"])
+            
+            # Write data rate
+            writer.writerow([datetime.now(), file_name, data_rate])
+        
+        print(f"Data rate for {file_name}: {data_rate:.2f} bytes/second logged.")
+    except Exception as e:
+        print(f"Failed to log data rate for {file_name}: {e}")
