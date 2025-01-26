@@ -84,3 +84,21 @@ def log_data_rate(file_name, total_data_received, start_time, end_time, DATA_RAT
         print(f"Data rate for {file_name}: {data_rate:.2f} bytes/second logged.")
     except Exception as e:
         print(f"Failed to log data rate for {file_name}: {e}")
+
+def log_latency(file_name, latency, LATENCY_LOG_FILE, latencies):
+    # Log the latency to a CSV file.
+    try:
+        latencies.append(latency)
+        
+        with open(LATENCY_LOG_FILE, mode="a", newline="") as csv_file:
+            writer = csv.writer(csv_file)
+            # Write header if file is empty
+            if csv_file.tell() == 0:
+                writer.writerow(["Timestamp", "File Name", "Latency (seconds)"])
+            
+            # Write latency
+            writer.writerow([datetime.now(), file_name, latency])
+        
+        print(f"Latency for {file_name}: {latency:.2f} seconds logged.")
+    except Exception as e:
+        print(f"Failed to log latency for {file_name}: {e}")
