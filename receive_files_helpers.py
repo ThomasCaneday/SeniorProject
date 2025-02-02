@@ -85,6 +85,7 @@ def log_data_rate(file_name, total_data_received, start_time, end_time, DATA_RAT
     except Exception as e:
         print(f"Failed to log data rate for {file_name}: {e}")
 
+
 def log_latency(file_name, latency, LATENCY_LOG_FILE, latencies):
     # Log the latency to a CSV file.
     try:
@@ -102,6 +103,7 @@ def log_latency(file_name, latency, LATENCY_LOG_FILE, latencies):
         print(f"Latency for {file_name}: {latency:.2f} seconds logged.")
     except Exception as e:
         print(f"Failed to log latency for {file_name}: {e}")
+
 
 def process_received_file(file_name, received_data, sent_time, LATENCY_LOG_FILE, latencies, DATA_RATE_LOG_FILE, data_rates):
     # Process a received file, calculate latency and data rate metrics, and log them to a CSV.
