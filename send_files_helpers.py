@@ -1,4 +1,4 @@
-import os, time, struct
+import os, time, struct, traceback, csv
 
 def get_file_size(file_name):
     file_size = os.path.getsize(file_name)
