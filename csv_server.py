@@ -1,3 +1,4 @@
+# Unimportant to official tests
 import asyncio
 import websockets
 import os
