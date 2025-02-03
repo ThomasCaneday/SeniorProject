@@ -1,8 +1,8 @@
-### Senior Project
+# Senior Project
 
 This repository will be the storing place for my data transmission and packaging files.
 
-# Raspberry Pi Network Troubleshooting:
+### Raspberry Pi Network Troubleshooting:
 - For enabling local network: `sudo systemctl enable isc-dhcp-server`
 
 TODO: Add files used for configuring Ad Hoc network
