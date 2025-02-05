@@ -17,8 +17,6 @@ Added: File for continuously recording minute sound files
 
 Fix: Tested internal and partially external antenna (no significant difference)
 
-Added: File for packaging audio as CSV
-
 Added: File for sending CSV file through WebSockets server connection
 
 TODO: Test CSV data transmission with new sample data
@@ -28,8 +26,6 @@ TODO: Increase distance between Raspberry Pis
 TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m on land)
 
 TODO: Test Network Connectivity/Latency
-
-TODO: Test Data Transmission Data Rate/Error Rate
 
 TODO: Test delta between RP-RP and RP-PC connection and transmission
 
