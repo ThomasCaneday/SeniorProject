@@ -15,8 +15,6 @@ TODO: Add file for continuously recording 1 minute sound file that overwrites it
 
 Added: File for continuously recording minute sound files
 
-Fix: Tested internal and partially external antenna (no significant difference)
-
 Added: File for sending CSV file through WebSockets server connection
 
 TODO: Test CSV data transmission with new sample data
