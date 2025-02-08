@@ -11,8 +11,6 @@ Fix: Configured network files on Raspberry Pi
 
 Added: File for recording audio
 
-TODO: Add file for continuously recording 1 minute sound file that overwrites itself after sending to server
-
 Added: File for continuously recording minute sound files
 
 Added: File for sending CSV file through WebSockets server connection
