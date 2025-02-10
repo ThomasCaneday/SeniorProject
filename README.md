@@ -15,8 +15,6 @@ Added: File for continuously recording minute sound files
 
 Added: File for sending CSV file through WebSockets server connection
 
-TODO: Test CSV data transmission with new sample data
-
 TODO: Increase distance between Raspberry Pis
 
 TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m on land)
