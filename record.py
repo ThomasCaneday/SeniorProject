@@ -6,7 +6,8 @@ def record():
     CHUNK = 1024  # Number of audio frames per buffer
     FORMAT = pyaudio.paInt16  # Audio format
     CHANNELS = 1  # Number of audio channels (mono)
-    RATE = 44100  # Sample rate (Hz)
+    # RATE = 44100   Sample rate (Hz)
+    RATE = 300 # Sample rate (Hz) for frequency of 150 Hz
 
     # Output file
     OUTPUT_FILENAME = "recorded_audio.wav"
