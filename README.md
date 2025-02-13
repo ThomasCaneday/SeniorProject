@@ -17,8 +17,6 @@ Added: File for sending CSV file through WebSockets server connection
 
 TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m on land)
 
-TODO: Test Network Connectivity/Latency
-
 TODO: Test delta between RP-RP and RP-PC connection and transmission
 
 TODO: Add file for classifying air vehicle
