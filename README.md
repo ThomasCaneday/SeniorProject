@@ -17,6 +17,4 @@ TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m o
 
 TODO: Find delta (if any) between RP-RP and RP-PC connection and transmission
 
-TODO: Add file for classifying air vehicle
-
 TODO: Add file for determining direction of vehicle target
