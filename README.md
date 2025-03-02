@@ -16,3 +16,5 @@ Added: File for sending CSV file through WebSockets server connection
 TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m on land)
 
 TODO: Add file for determining direction of vehicle target
+
+TODO: Conduct land banch test for multi-node system
