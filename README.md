@@ -23,4 +23,6 @@ TODO: Research Nyquist frequency, DBI, Octave, overwater communication range req
 
 TODO: Conduct tests to acquire frequencies from sweep using audio analyzer, subwoofer, and microphone
 
+FINISHED: Conducted sweep tests using audio analyzer box, subwoofer, and microphone
+
 TODO: Create data visualizations for freqeuncy sweep tests
