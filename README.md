@@ -26,3 +26,5 @@ TODO: Conduct tests to acquire frequencies from sweep using audio analyzer, subw
 FINISHED: Conducted sweep tests using audio analyzer box, subwoofer, and microphone
 
 TODO: Create data visualizations for freqeuncy sweep tests
+
+FINISHED: Created data vizs for frequency sweep tests (may need revision)
