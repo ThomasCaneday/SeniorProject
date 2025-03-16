@@ -28,3 +28,5 @@ FINISHED: Conducted sweep tests using audio analyzer box, subwoofer, and microph
 TODO: Create data visualizations for freqeuncy sweep tests
 
 FINISHED: Created data vizs for frequency sweep tests (may need revision)
+
+TODO: Review data analysis and Nyquist, DBI, Octave
