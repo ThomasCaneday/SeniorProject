@@ -30,3 +30,5 @@ TODO: Create data visualizations for freqeuncy sweep tests
 FINISHED: Created data vizs for frequency sweep tests (may need revision)
 
 TODO: Review data analysis and Nyquist, DBI, Octave
+
+TODO: Add LOC, code snapshot, etc slides to CDR Review
