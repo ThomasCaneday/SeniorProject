@@ -1,36 +1,47 @@
-# Senior Project
+# GTRI MERMAID – Maritime Environmental Remote Monitoring Acoustic Intelligent Device
 
-This repository will be the storing place for my data transmission and packaging files.
+**Senior Design Project – University of San Diego × Georgia Tech Research Institute (GTRI)**
 
-### Raspberry Pi Network Troubleshooting:
-- For enabling local network: `sudo systemctl enable isc-dhcp-server`
+This repository contains the code I wrote and field‑tested during the 2024‑2025 academic year.  Everything listed below reflects functionality that is currently working in the buoy prototypes.
 
-TODO: Add files used for configuring Ad Hoc network
+---
 
-Added: File for recording audio
+## What the software really does
 
-Added: File for continuously recording minute sound files
+* **Dual‑channel capture** – records airborne (I²S MEMS) *and* underwater (USB hydrophone) audio at 48 kHz / 24‑bit.
+* **Infrasound extraction** – real‑time FIR + FFT pipeline isolates < 20 Hz energy, logs SPL & peak frequency.
+* **Lightweight event broadcast** – summary JSON packets sent once per second to a peer buoy over ad‑hoc Wi‑Fi.
+* **Local storage** – raw WAV files written to SD card with automatic daily rotation.
+* **Offline analysis tools** – Jupyter notebooks that generate spectrograms and statistical charts from field recordings.
 
-Added: File for sending CSV file through WebSockets server connection
+---
 
-TODO: Find maximum distance between Raspberry Pi/antenna and PC (at least 500m on land)
+## Hardware used in the prototype
 
-TODO: Add file for determining direction of vehicle target
+| Part           | Model we used                       |
+| -------------- | ----------------------------------- |
+| Compute        | Raspberry Pi 4 Model B (2 GB)       |
+| Air microphone | Adafruit SPH0645 I²S MEMS           |
+| Connectivity   | Built‑in Wi‑Fi in ad‑hoc mode       |
+| Power          | 10 Ah Li‑ion battery pack           |
 
-TODO: Conduct land bench test for multi-node system
+If you swap components, just update `config.py` to match the new device names and sample rates.
 
-TODO: Research Nyquist frequency, DBI, Octave, overwater communication range requirements, etc
+---
 
-TODO: Conduct tests to acquire frequencies from sweep using audio analyzer, subwoofer, and microphone
+## Quick‑start (on a Pi)
 
-FINISHED: Conducted sweep tests using audio analyzer box, subwoofer, and microphone
+```bash
+# Clone and enter project
+$ git clone https://github.com/<your‑org>/mermaid.git
+$ cd mermaid/pi
 
-TODO: Create data visualizations for freqeuncy sweep tests
+# Create and activate virtualenv
+$ python3 -m venv venv && source venv/bin/activate
 
-FINISHED: Created data vizs for frequency sweep tests (may need revision)
+# Install dependencies (≈30 MB)
+$ pip install -r requirements.txt
 
-TODO: Review data analysis and Nyquist, DBI, Octave
-
-FINISHED: CDR
-
-TODO: Creative Collaborations Showcase
+# Run the capture + broadcast loop
+$ python main.py
+```
